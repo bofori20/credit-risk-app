@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Risk Prediction</title>
+</head>
+<body>
+    <h2>Enter Applicant Data</h2>
+    <form action="/predict" method="post">
+        <label>age:           </label><input type="text" name="feature1" required><br>
+        <label>years employed:</label><input type="text" name="feature2" required><br>
+        <label>income:        </label><input type="text" name="feature3" required><br>
+        <label>debt/income:   </label><input type="text" name="feature4" required><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
